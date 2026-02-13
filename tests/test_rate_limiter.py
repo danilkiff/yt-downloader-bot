@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
 """Tests for rate limiter service."""
 
 from unittest.mock import patch

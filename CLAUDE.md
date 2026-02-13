@@ -2,7 +2,7 @@
 
 This file provides guidance for Claude Code when working with this repository.
 
-## Project Overview
+## Project overview
 
 Telegram bot for downloading videos from YouTube, Instagram, and TikTok. Built with Python 3.14, aiogram 3.x, and yt-dlp.
 
@@ -34,7 +34,7 @@ src/bot/
     └── url.py          # URLValidator - whitelist-based URL validation
 ```
 
-## Key Design Decisions
+## Key design decisions
 
 - **URL Validation**: Whitelist approach - only specific domains (youtube.com, instagram.com, tiktok.com) are allowed. Tracking parameters are stripped from URLs.
 - **Rate Limiting**: In-memory sliding window per user. Default: 5 requests per 60 seconds.
@@ -42,12 +42,13 @@ src/bot/
 - **Async**: All I/O operations are async. yt-dlp calls run in executor to avoid blocking.
 - **Error Handling**: Custom exceptions (`DownloadError`, `FileTooLargeError`, `VideoUnavailableError`, `RateLimitExceeded`) with user-friendly messages.
 
-## Code Style
+## Code style
 
 - Comments and documentation in English
 - Type hints required for all functions
 - Use `ruff` for linting and formatting
 - Follow existing patterns in the codebase
+- Every new source file must start with `# SPDX-License-Identifier: CC-BY-SA-4.0`
 
 ## Testing
 
@@ -56,7 +57,7 @@ src/bot/
 - Minimum coverage requirement: 80%
 - Mock external services (yt-dlp, Telegram API) in tests
 
-## Environment Variables
+## Environment variables
 
 | Variable | Required | Default | Description |
 |----------|----------|---------|-------------|
@@ -67,7 +68,7 @@ src/bot/
 | `RATE_LIMIT_WINDOW` | No | 60 | Rate limit window in seconds |
 | `TEMP_DIR` | No | /tmp/yt-downloader-bot | Temp directory for downloads |
 
-## Security Considerations
+## Security considerations
 
 When modifying this codebase:
 

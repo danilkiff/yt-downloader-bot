@@ -1,9 +1,5 @@
 # YT Downloader Bot
 
-[![CI](https://github.com/danilkiff/yt-downloader-bot/actions/workflows/ci.yml/badge.svg)](https://github.com/danilkiff/yt-downloader-bot/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/danilkiff/yt-downloader-bot/branch/main/graph/badge.svg)](https://codecov.io/gh/danilkiff/yt-downloader-bot)
-[![Python 3.14+](https://img.shields.io/badge/python-3.14+-blue.svg)](https://www.python.org/downloads/)
-
 Telegram bot for downloading videos from YouTube, Instagram, and TikTok.
 
 ## Features
@@ -14,7 +10,7 @@ Telegram bot for downloading videos from YouTube, Instagram, and TikTok.
 - 50MB file size limit (Telegram API constraint)
 - Docker support for easy deployment
 
-## Bot Commands
+## Bot commands
 
 - `/start` — Welcome message and supported platforms
 - `/help` — Usage instructions and limitations
@@ -74,4 +70,4 @@ make clean      # Remove temporary files
 
 ## License
 
-MIT
+[CC BY-SA 4.0](LICENSE)

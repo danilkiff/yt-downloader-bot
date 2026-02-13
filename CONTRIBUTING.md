@@ -43,6 +43,16 @@ Remove unused validator parameter
 - Ensure `make check` passes before requesting review
 - Describe *what* and *why* in the PR description
 
+## AI-Assisted Contributions
+
+We explicitly welcome contributions made with the help of AI tools, including autonomous coding agents (Claude Code, Cursor, Copilot Workspace, etc.). Unlike some projects that restrict AI-generated contributions, we care about the **result**, not the method.
+
+Rules:
+
+- **A human is always accountable.** Every PR must be submitted by a person who takes responsibility for the changes — reviews them, can explain the reasoning, and will address feedback.
+- **Mark AI involvement.** Add a `Co-Authored-By` trailer (e.g., `Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>`) or note it in the PR description.
+- **Quality bar is the same.** AI-assisted PRs must pass `make check`, include tests, and follow all the same standards as any other contribution. Low-effort "prompt-and-paste" PRs will be rejected just like any other low-quality submission.
+
 ## Reporting Issues
 
 - Use GitHub Issues

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
 """Tests for message handlers."""
 
 from unittest.mock import AsyncMock, MagicMock, patch

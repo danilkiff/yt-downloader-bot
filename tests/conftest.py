@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
 """Pytest configuration and fixtures."""
 
 import tempfile

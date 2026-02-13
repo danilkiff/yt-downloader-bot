@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
 """Rate limiting service for anti-abuse protection."""
 
 import time

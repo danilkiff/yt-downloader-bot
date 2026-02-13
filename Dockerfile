@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
 FROM python:3.14-slim
 
 # Security: Run as non-root user

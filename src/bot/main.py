@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
 """Main entry point for the Telegram bot."""
 
 import asyncio

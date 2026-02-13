@@ -1,0 +1,21 @@
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: yt-downloader-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Security: read-only root filesystem
+    read_only: true
+    tmpfs:
+      - /tmp  # writable temp for downloads, cleared on restart
+    # Security: drop all capabilities
+    cap_drop:
+      - ALL
+    # Security: no new privileges
+    security_opt:
+      - no-new-privileges:true
